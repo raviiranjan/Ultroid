@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/52e1489848b6a30f7e7ff.mp4" alt="TeamUltroid Logo">
+  <img src="https://telegra.ph/file/c5f50547a7154978551b8.png" alt="TeamUltroid Logo">
 </p>
 <h1 align="center">
   <b>Ultroid - UserBot</b>
