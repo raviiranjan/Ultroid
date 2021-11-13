@@ -42,7 +42,7 @@ Get the [Necessary Variables](#Necessary-Variables) and then click the button be
 ## Deploy Locally
 - [Traditional Method](#local-deploy---traditional-method)
 - [Easy Method](#local-deploy---easy-method)
-- [Latest Method](#local-deploy---latest-method)
+
 
 
 
