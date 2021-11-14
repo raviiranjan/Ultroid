@@ -149,7 +149,7 @@ async def changes(okk):
             )
             img = await carbon.memorize("changelog")
             return await okk.edit(
-                f"**• Ultroid Userbot •**{cli}", file=img, buttons=button
+                f"**• JHON Userbot •**{cli}", file=img, buttons=button
             )
         except Exception as er:
             LOGS.exception(er)
@@ -157,14 +157,14 @@ async def changes(okk):
     if len(changelog_str) > 1024:
         await okk.edit(get_string("upd_4"))
         await asyncio.sleep(2)
-        with open("ultroid_updates.txt", "w+") as file:
+        with open("jhon_updates.txt", "w+") as file:
             file.write(tl_chnglog)
         await okk.edit(
             get_string("upd_5"),
-            file="ultroid_updates.txt",
+            file="jhon_updates.txt",
             buttons=Button.inline("Update Now", data="updatenow"),
         )
-        remove("ultroid_updates.txt")
+        remove("jhon_updates.txt")
         return
     await okk.edit(
         changelog_str,
@@ -211,7 +211,7 @@ async def _(e):
     token_file_data = f.read()
     udB.set("GDRIVE_TOKEN", token_file_data)
     await e.reply(
-        "`Success!\nYou are all set to use Google Drive with Ultroid Userbot.`",
+        "`Success!\nYou are all set to use Google Drive with Jhon Userbot.`",
         buttons=Button.inline("Main Menu", data="setter"),
     )
 
@@ -418,7 +418,7 @@ async def pluginch(event):
     name = "Plugin Channel"
     async with event.client.conversation(pru) as conv:
         await conv.send_message(
-            "Send id or username of a channel from where u want to install all plugins\n\nOur Channel~ @ultroidplugins\n\nUse /cancel to cancel.",
+            "Send id or username of a channel from where u want to install all plugins\n\nOur Channel~ @johnplugin\n\nUse /cancel to cancel.",
         )
         response = conv.wait_event(events.NewMessage(chats=pru))
         response = await response
@@ -1243,7 +1243,9 @@ async def chon(event):
 @callback("vcb", owner=True)
 async def vcb(event):
     await event.edit(
-        "From This Feature U can play songs in group voice chat\n\n[moreinfo](https://t.me/UltroidUpdates/4)",
+        "From This Feature U can play songs in group voice chat\n\n[moreinfo](https://t.me/johnuserbotupdate/4)",
+
+
         buttons=[
             [Button.inline("VC Sᴇssɪᴏɴ", data="vcs")],
             [Button.inline("« Bᴀᴄᴋ", data="setter")],
